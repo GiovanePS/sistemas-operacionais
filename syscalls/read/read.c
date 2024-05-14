@@ -20,6 +20,7 @@ int main(void) {
 
   int bytes_read = read(fd, buffer, sizeof(buffer));
 
+  printf("\nBuffer size: %d", sizeof(buffer));
   printf("\n%d bytes read!\n", bytes_read);
   printf("File contents: %s\n", buffer);
 
